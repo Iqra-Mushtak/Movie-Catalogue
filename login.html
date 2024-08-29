@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CINEFY Login</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="./style1.css" />
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="./logo3.png" type="image/x-icon" />
+  <!-- Box Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Nav -->
+    <div class="nav container">
+      <!-- Logo -->
+      <a href="#" class="logo"> Cine<span>fy</span> </a>
+      <!-- Search-Box -->
+      <!-- <div class="search-box">
+        <input type="search" name="" id="search-input" placeholder="Search Movie" />
+        <i class="bx bx-search-alt-2"></i>
+      </div> -->
+      <!-- User -->
+      <a href="#" class="user">
+        <img src="./logo3.png" alt="" class="user-img" />
+      </a>
+    </div>
+  </header>
+
+      <div class="wrapper">
+        <form action="connect.php" method="post">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Username" id="username" name="username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" placeholder="Password" id="password" name="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            
+            <button type="submit" class="btn" onclick="location.href='http://127.0.0.1:5500/index1.html'">Login</button>
+            
+            <div class="register-link">
+                <p>Don't have an account? <a href="http://localhost/iqra/register.php">Register</a></p>
+            </div>
+        </form>
+      </div>
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>&#169; CINEFY All rights reserved</p>
+  </div>
+
+  <!-- Link to JS Swiper Files -->
+   <script src="js/swiper-bundle.min.js"></script>
+  <!-- Link to JS -->
+  <script src="js/movie.js"></script>
+</body>
+
+</html>

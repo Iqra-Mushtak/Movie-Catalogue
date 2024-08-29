@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rating & Reviews</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="rate1.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="./logo3.png" type="image/x-icon" />
+  <!-- Box Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+  
+  <body>
+    <!-- Header -->
+  <header>
+    <!-- Nav -->
+    <div class="nav container">
+      <!-- Logo -->
+      <a href="#" class="logo"> Cine<span>fy</span> </a>
+      
+      <!-- User -->
+      <a href="#" class="user">
+        <img src="./logo3.png" alt="" class="user-img" />
+      </a>
+    </div>
+  </header>
+  <!-- Rate -->
+    <div class="rating">
+      <div class="post">
+        <div class="text">Thanks for your reviews!</div>
+        <div class="edit">EDIT</div>
+      </div>
+      <div class="star-widget">
+        <input type="radio" name="rate" id="rate-5">
+        <label for="rate-5" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-4">
+        <label for="rate-4" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-3">
+        <label for="rate-3" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-2">
+        <label for="rate-2" class="fas fa-star"></label>
+        <input type="radio" name="rate" id="rate-1">
+        <label for="rate-1" class="fas fa-star"></label>
+        <form action="#">
+         <p></p>
+          <div class="textarea">
+            <textarea cols="30" placeholder="Comment Here" required></textarea>
+          </div>
+          <div class="btn">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      const btn = document.querySelector("button");
+      const post = document.querySelector(".post");
+      const widget = document.querySelector(".star-widget");
+      const editBtn = document.querySelector(".edit");
+      btn.onclick = ()=>{
+        widget.style.display = "none";
+        post.style.display = "block";
+        editBtn.onclick = ()=>{
+          widget.style.display = "block";
+          post.style.display = "none";
+        }
+        return false;
+      }
+    </script>
+
+  </body>
+</html>

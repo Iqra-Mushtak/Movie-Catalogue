@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Painter</title>
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="css/style1.css" />
+  <!-- Fav Icon -->
+  <link rel="shortcut icon" href="./logo3.png" type="image/x-icon" />
+  <!-- Box Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Nav -->
+    <div class="nav container">
+      <!-- Logo -->
+      <a href="index1.html" class="logo"> Cine<span>fy</span> </a>
+      <!-- Search-Box -->
+      <div class="search-box">
+        <input type="search" name="" id="search-input" placeholder="Search Movie" />
+        <i class="bx bx-search-alt-2"></i>
+      </div>
+      <!-- User -->
+      <a href="#" class="user">
+        <img src="./logo3.png" alt="" class="user-img" />
+      </a>
+
+      <!-- NavBar -->
+      <div class="navbar">
+        <a href="index1.html" class="nav-link nav-active">
+          <i class="bx bx-home"></i>
+          <span class="nav-link-title">Home</span>
+        </a>
+        <a href="#home" class="nav-link">
+          <i class="bx bxs-hot"></i>
+          <span class="nav-link-title">Trending</span>
+        </a>
+        <a href="#home" class="nav-link">
+          <i class="bx bx-compass"></i>
+          <span class="nav-link-title">Explore</span>
+        </a>
+        <a href="#home" class="nav-link">
+          <i class="bx bx-tv"></i>
+          <span class="nav-link-title">Movies</span>
+        </a>
+        <a href="#home" class="nav-link">
+          <i class="bx bx-heart"></i>
+          <span class="nav-link-title">Favourite</span>
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- Play Movie Container -->
+   <div class="play-container container">
+    <!-- Play Image -->
+    <img src="img/The Painter.jpg" alt="" class="play-img">
+    <!-- Play Text -->
+     <div class="play-text">
+      <h2>The Painter</h2>
+      <!-- Ratings -->
+      <div class="rating">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star-half' ></i>
+      </div>
+      <!-- Tags -->
+       <div class="tags">
+        <span>Action</span>
+        <span>Thriller</span>
+        <span>Suspense</span>
+        <span>4K</span>
+       </div>
+       <!-- Trailer button -->
+       <a href="#" class="watch-btn">
+        <i class="bx bx-right-arrow"></i>
+        <span>Watch the Trailer</span>
+      </a>
+     </div>
+     <!-- Play Button -->
+     <i class="bx bx-right-arrow play-movie"></i>
+     <!-- Video Container -->
+      <div class="video-container">
+        <!-- Video Box -->
+         <div class="video-box">
+          <video id="myvideo" src="movies/The Painter/The Painter.mp4" controls></video>
+          <!-- Close Video -->
+          <i class='bx bx-x close-video'></i>
+         </div>
+      </div>
+   </div>
+   <!-- About Movie -->
+    <div class="about-movie container">
+      <h2>The Painter</h2>
+      <p>An ex-CIA operative turned painter is thrown back into a dangerous world when a mysterious woman from his past resurfaces. Now exposed and targeted by a relentless killer and a rogue black ops program, he must rely on skills he thought he left behind in a high-stakes game of survival.</p>
+      <!-- Movie Cast -->
+       <h2 class="cast-heading">Movie Cast</h2>
+       <div class="cast">
+        <div class="cast-box">
+          <img src="movies/The Painter/charlie weber.jpg" alt="" class="cast-img">
+          <span class="cast-title">Charlie Weber</span>
+        </div>
+        <div class="cast-box">
+          <img src="movies/The Painter/Marie Avgeropoulos.jpg" alt="" class="cast-img">
+          <span class="cast-title">Marie Avgeropoulos</span>
+        </div>
+        <div class="cast-box">
+          <img src="movies/The Painter/Doug Chapman.jpeg" alt="" class="cast-img">
+          <span class="cast-title">Doug Chapman</span>
+        </div>
+        <div class="cast-box">
+          <img src="movies/The Painter/Jon Voight.webp" alt="" class="cast-img">
+          <span class="cast-title">Jon Voight</span>
+        </div>
+        <div class="cast-box">
+          <img src="movies/The Painter/Leah Gibson.webp" alt="" class="cast-img">
+          <span class="cast-title">Leah Gibson</span>
+        </div>
+        <div class="cast-box">
+          <img src="movies/The Painter/madison bailey.jpg" alt="" class="cast-img">
+          <span class="cast-title">Madison Bailey</span>
+        </div>
+       </div>
+    </div>
+
+    <!-- Rate -->
+    <h2 class="rate-title" onclick="location.href='http://127.0.0.1:5500/rate1.html'">Click to Rate</h2>
+    
+    <!-- Download -->
+     <div class="download">
+      <h2 class="download-title">Download Movie</h2>
+      <div class="download-links">
+        <a href="movies/The Painter/The Painter.mp4" download>480p</a>
+        <a href="movies/The Painter/The Painter.mp4" download>720p</a>
+        <a href="movies/The Painter/The Painter.mp4" download>1080p</a>
+      </div>
+     </div>
+  <!-- Copyright -->
+  <div class="copyright">
+    <p>&#169; CINEFY All rights reserved</p>
+  </div>
+
+  <!-- Link to JS Swiper Files -->
+   <script src="js/swiper-bundle.min.js"></script>
+  <!-- Link to JS -->
+  <script src="js/movie.js"></script>
+</body>
+
+</html>
